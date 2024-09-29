@@ -1,0 +1,78 @@
+nodes:
+  # omvat info uit "omschrijving project" op DigitAP, blok 2
+  - id: intro
+    title: "Introductie project URL shortener"
+  # tussenstappen
+  # (oude cursus bevat alleen voorbereidende oefeningen voor meteen basisversie)
+  # (voorbereidende oefeningen 2 gaat over scheiding Python-HTML-CSS en over caching decorator)
+  #
+  # FIXME
+  # misschien beter eerst gewoon "mapping tonen" te doen
+  # daarna formulier verwerken voor "mapping bijhouden"?
+  - id: stap-1-mapping-tonen-motivatie
+    title: "Motivatie stap 1: mapping tonen"
+  - id: stap-1-mapping-tonen-implementatie
+    title: "Implementatie stap 1: mapping tonen"
+  - id: stap-2-mapping-uitbreiden-motivatie
+    title: "Motivatie stap 2: mapping uitbreiden"
+  - id: stap-2-mapping-uitbreiden-implementatie
+    title: "Implementatie stap 2: mapping uitbreiden"
+  - id: stap-3-persistente-mapping-motivatie
+    title: "Motivatie stap 3: persistente mapping"
+  - id: stap-3-persistente-mapping-implementatie
+    title: "Implementatie stap 3: persistente mapping"
+  - id: stap-4-redirects-motivatie
+  - id: stap-4-redirects-implementatie
+  - id: stap-5-randomized-aliassen-motivatie # brute forcen mag niet mogelijk zijn! wat als er privélinks zijn?
+  - id: stap-5-randomized-aliassen-implementatie # leer ze hierbij random.choice gebruiken?
+  - id: stap-6-styling-motivatie # static assets!
+  - id: stap-6-styling-implementatie
+  - id: stap-7-foutafhandeling-motivatie # 404 en exception handling
+  - id: stap-7-foutafhandeling-implementatie
+  - id: stap-8-logging-motivatie
+  - id: stap-8-logging-implementatie
+  - id: stap-9-caching-motivatie
+  - id: stap-9-caching-implementatie
+  - id: stap-10-vorm-url-motivatie
+  - id: stap-10-vorm-url-implementatie
+  - id: stap-11-rest-api-motivatie
+  - id: stap-11-rest-api-implementatie
+  - id: uitbreidingen
+  # UITBREIDING: security best practices (voorkomen SQL-injectie, gebruik flask-talisman en flask-seasurf)
+  # UITBREIDING: accountsysteem (usernaam, gehasht en salted wachtwoord!)
+  # UITBREIDING: logIO decorator (studenten moeten dit tot in de puntjes uitleggen!)
+  # UITBREIDING: flask-sqlalchemy gebruiken (hoe goed gaat dit samen met flask-restful?)
+  # UITBREIDING: QR codes genereren
+all_type_edges:
+  - start_id: intro
+    end_id: stap-1-mapping-tonen-motivatie
+  - start_id: cluster-python-concepten__flask-basics
+    end_id: stap-1-mapping-tonen-implementatie
+  - start_id: cluster-python-concepten__flask-formulieren
+    end_id: stap-2-mapping-uitbreiden-implementatie
+  - start_id: cluster-python-concepten__flask-combineren-met-jinja
+    end_id: stap-2-mapping-uitbreiden-implementatie
+  - start_id: cluster-python-concepten__sqlite-basics
+    end_id: stap-3-persistente-mapping-implementatie
+any_type_edges:
+  - start_id: stap-1-mapping-tonen-motivatie
+    end_id: stap-1-mapping-tonen-implementatie
+  - start_id: stap-1-mapping-tonen-implementatie
+    end_id: stap-2-mapping-uitbreiden-motivatie
+  - start_id: stap-2-mapping-uitbreiden-motivatie
+    end_id: stap-2-mapping-uitbreiden-implementatie
+  - start_id: stap-2-mapping-uitbreiden-implementatie
+    end_id: stap-3-persistente-mapping-motivatie
+  - start_id: stap-3-persistente-mapping-motivatie
+    end_id: stap-3-persistente-mapping-implementatie
+roots:
+  - intro
+node_plugins:
+  - path: "$APPLICATION_SOURCE_DIR/rust-workspace/target/debug/liblblp_assignments_plugin.so"
+    require_solutions: False
+pre_cluster_plugins:
+  - path: "$APPLICATION_SOURCE_DIR/rust-workspace/target/debug/liblblp_markdown_rendering_plugin.so"
+# mogelijke uitbreidingen
+# QR-codes genereren?
+# user shorthand laten kiezen
+# switchen naar SQLAlchemy en eventueel Flask-SQLAlchemy
