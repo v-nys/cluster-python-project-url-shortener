@@ -73,6 +73,26 @@ all_type_edges:
     end_id: stap-2-mapping-uitbreiden-implementatie
   - start_id: cluster-python-concepten__sqlite-basics
     end_id: stap-3-persistente-mapping-implementatie
+  - start_id: cluster-python-concepten__flask-redirects
+    end_id: stap-4-redirects-implementatie
+  - start_id: cluster-python-concepten__ranges
+    end_id: stap-5-randomized-aliassen-implementatie
+  - start_id: cluster-python-concepten__karaktervoorstellingen
+    end_id: stap-5-randomized-aliassen-implementatie
+  - start_id: cluster-python-concepten__random-choice
+    end_id: stap-5-randomized-aliassen-implementatie
+  - start_id: cluster-python-concepten__flask-static
+    end_id: stap-6-styling-implementatie
+  - start_id: cluster-python-concepten__flask-error-handling
+    end_id: stap-7-foutafhandeling-implementatie
+  - start_id: cluster-python-concepten__logging-basis
+    end_id: stap-8-logging-implementatie
+  - start_id: cluster-python-concepten__decorators-basis
+    end_id: stap-9-caching-implementatie
+  - start_id: cluster-python-concepten__decorators-met-argumenten
+    end_id: stap-10-universele-logging-implementatie
+  - start_id: cluster-python-concepten__basis-reguliere-expressies
+    end_id: stap-11-vorm-url-implementatie
 any_type_edges:
   - start_id: stap-1-mapping-tonen-motivatie
     end_id: stap-1-mapping-tonen-implementatie
