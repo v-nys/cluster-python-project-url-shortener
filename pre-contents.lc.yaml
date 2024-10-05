@@ -22,22 +22,41 @@ nodes:
   - id: stap-3-persistente-mapping-implementatie
     title: "Implementatie stap 3: persistente mapping"
   - id: stap-4-redirects-motivatie
+    title: "Motivatie stap 4: redirects"
   - id: stap-4-redirects-implementatie
+    title: "Implementatie stap 4: redirects"
   - id: stap-5-randomized-aliassen-motivatie # brute forcen mag niet mogelijk zijn! wat als er privélinks zijn?
+    title: "Motivatie stap 5: randomized aliassen"
   - id: stap-5-randomized-aliassen-implementatie # leer ze hierbij random.choice gebruiken?
+    title: "Implementatie stap 5: randomized aliassen"
   - id: stap-6-styling-motivatie # static assets!
+    title: "Motivatie stap 6: styling"
   - id: stap-6-styling-implementatie
+    title: "Implementatie stap 6: styling"
   - id: stap-7-foutafhandeling-motivatie # 404 en exception handling
+    title: "Motivatie stap 7: foutafhandeling"
   - id: stap-7-foutafhandeling-implementatie
+    title: "Implementatie stap 7: foutafhandeling"
   - id: stap-8-logging-motivatie
+    title: "Motivatie stap 8: logging"
   - id: stap-8-logging-implementatie
+    title: "Implementatie stap 8: logging"
   - id: stap-9-caching-motivatie
+    title: "Motivatie stap 9: caching"
   - id: stap-9-caching-implementatie
-  - id: stap-10-vorm-url-motivatie
-  - id: stap-10-vorm-url-implementatie
-  - id: stap-11-rest-api-motivatie
-  - id: stap-11-rest-api-implementatie
+    title: "Implementatie stap 9: caching"
+  - id: stap-10-universele-logging-motivatie
+    title: "Motivatie stap 10: universele logging"
+  - id: stap-10-universele-logging-implementatie
+    title: "Implementatie stap 10: universele-logging"
+  - id: stap-11-vorm-url-motivatie
+    title: "Motivatie stap 11: vormelijke controle URL"
+  - id: stap-11-vorm-url-implementatie
+    title: "Implementatie stap 11: vormelijke controle URL"
+    # - id: stap-11-rest-api-motivatie
+    # - id: stap-11-rest-api-implementatie
   - id: uitbreidingen
+    title: "Uitbreidingen URL shortener"
   # UITBREIDING: security best practices (voorkomen SQL-injectie, gebruik flask-talisman en flask-seasurf)
   # UITBREIDING: accountsysteem (usernaam, gehasht en salted wachtwoord!)
   # UITBREIDING: logIO decorator (studenten moeten dit tot in de puntjes uitleggen!)
@@ -65,6 +84,40 @@ any_type_edges:
     end_id: stap-3-persistente-mapping-motivatie
   - start_id: stap-3-persistente-mapping-motivatie
     end_id: stap-3-persistente-mapping-implementatie
+  - start_id: stap-3-persistente-mapping-implementatie
+    end_id: stap-4-redirects-motivatie
+  - start_id: stap-4-redirects-motivatie
+    end_id: stap-4-redirects-implementatie
+  - start_id: stap-4-redirects-implementatie
+    end_id: stap-5-randomized-aliassen-motivatie
+  - start_id: stap-5-randomized-aliassen-motivatie
+    end_id: stap-5-randomized-aliassen-implementatie
+  - start_id: stap-5-randomized-aliassen-implementatie
+    end_id: stap-6-styling-motivatie
+  - start_id: stap-6-styling-motivatie
+    end_id: stap-6-styling-implementatie
+  - start_id: stap-6-styling-implementatie
+    end_id: stap-7-foutafhandeling-motivatie
+  - start_id: stap-7-foutafhandeling-motivatie
+    end_id: stap-7-foutafhandeling-implementatie
+  - start_id: stap-7-foutafhandeling-implementatie
+    end_id: stap-8-logging-motivatie
+  - start_id: stap-8-logging-motivatie
+    end_id: stap-8-logging-implementatie
+  - start_id: stap-8-logging-implementatie
+    end_id: stap-9-caching-motivatie
+  - start_id: stap-9-caching-motivatie
+    end_id: stap-9-caching-implementatie
+  - start_id: stap-9-caching-implementatie
+    end_id: stap-10-universele-logging-motivatie
+  - start_id: stap-10-universele-logging-motivatie
+    end_id: stap-10-universele-logging-implementatie
+  - start_id: stap-10-universele-logging-implementatie
+    end_id: stap-11-vorm-url-motivatie
+  - start_id: stap-11-vorm-url-motivatie
+    end_id: stap-11-vorm-url-implementatie
+  - start_id: stap-11-vorm-url-implementatie
+    end_id: uitbreidingen
 roots:
   - intro
 node_plugins:
