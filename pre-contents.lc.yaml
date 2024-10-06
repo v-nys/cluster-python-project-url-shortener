@@ -13,42 +13,75 @@ nodes:
     title: "Motivatie stap 1: mapping tonen"
   - id: stap-1-mapping-tonen-implementatie
     title: "Implementatie stap 1: mapping tonen"
+    assignments:
+      - id: indienopdracht
+        title: "Indienopdracht"
   - id: stap-2-mapping-uitbreiden-motivatie
     title: "Motivatie stap 2: mapping uitbreiden"
   - id: stap-2-mapping-uitbreiden-implementatie
     title: "Implementatie stap 2: mapping uitbreiden"
+    assignments:
+      - id: indienopdracht
+        title: "Indienopdracht"
+
   - id: stap-3-persistente-mapping-motivatie
     title: "Motivatie stap 3: persistente mapping"
   - id: stap-3-persistente-mapping-implementatie
     title: "Implementatie stap 3: persistente mapping"
+    assignments:
+      - id: indienopdracht
+        title: "Indienopdracht"
+
   - id: stap-4-redirects-motivatie
     title: "Motivatie stap 4: redirects"
   - id: stap-4-redirects-implementatie
     title: "Implementatie stap 4: redirects"
+    assignments:
+      - id: indienopdracht
+        title: "Indienopdracht"
+
   - id: stap-5-randomized-aliassen-motivatie # brute forcen mag niet mogelijk zijn! wat als er privélinks zijn?
     title: "Motivatie stap 5: randomized aliassen"
   - id: stap-5-randomized-aliassen-implementatie # leer ze hierbij random.choice gebruiken?
     title: "Implementatie stap 5: randomized aliassen"
+    assignments:
+      - id: indienopdracht
+        title: "Indienopdracht"
   - id: stap-6-styling-motivatie # static assets!
     title: "Motivatie stap 6: styling"
   - id: stap-6-styling-implementatie
     title: "Implementatie stap 6: styling"
+    assignments:
+      - id: indienopdracht
+        title: "Indienopdracht"
   - id: stap-7-foutafhandeling-motivatie # 404 en exception handling
     title: "Motivatie stap 7: foutafhandeling"
   - id: stap-7-foutafhandeling-implementatie
     title: "Implementatie stap 7: foutafhandeling"
+    assignments:
+      - id: indienopdracht
+        title: "Indienopdracht"
   - id: stap-8-logging-motivatie
     title: "Motivatie stap 8: logging"
   - id: stap-8-logging-implementatie
     title: "Implementatie stap 8: logging"
+    assignments:
+      - id: indienopdracht
+        title: "Indienopdracht"
   - id: stap-9-caching-motivatie
     title: "Motivatie stap 9: caching"
   - id: stap-9-caching-implementatie
     title: "Implementatie stap 9: caching"
+    assignments:
+      - id: indienopdracht
+        title: "Indienopdracht"
   - id: stap-10-universele-logging-motivatie
     title: "Motivatie stap 10: universele logging"
   - id: stap-10-universele-logging-implementatie
     title: "Implementatie stap 10: universele-logging"
+    assignments:
+      - id: indienopdracht
+        title: "Indienopdracht"
   - id: stap-11-vorm-url-motivatie
     title: "Motivatie stap 11: vormelijke controle URL"
   - id: stap-11-vorm-url-implementatie
@@ -57,11 +90,9 @@ nodes:
     # - id: stap-11-rest-api-implementatie
   - id: uitbreidingen
     title: "Uitbreidingen URL shortener"
-  # UITBREIDING: security best practices (voorkomen SQL-injectie, gebruik flask-talisman en flask-seasurf)
-  # UITBREIDING: accountsysteem (usernaam, gehasht en salted wachtwoord!)
-  # UITBREIDING: logIO decorator (studenten moeten dit tot in de puntjes uitleggen!)
-  # UITBREIDING: flask-sqlalchemy gebruiken (hoe goed gaat dit samen met flask-restful?)
-  # UITBREIDING: QR codes genereren
+    assignments:
+      - id: indienopdracht
+        title: "Indienopdracht"
 all_type_edges:
   - start_id: intro
     end_id: stap-1-mapping-tonen-motivatie
@@ -75,17 +106,13 @@ all_type_edges:
     end_id: stap-3-persistente-mapping-implementatie
   - start_id: cluster-python-concepten__flask-redirects
     end_id: stap-4-redirects-implementatie
-  - start_id: cluster-python-concepten__ranges
-    end_id: stap-5-randomized-aliassen-implementatie
   - start_id: cluster-python-concepten__karaktervoorstellingen
-    end_id: stap-5-randomized-aliassen-implementatie
-  - start_id: cluster-python-concepten__random-choice
     end_id: stap-5-randomized-aliassen-implementatie
   - start_id: cluster-python-concepten__flask-static
     end_id: stap-6-styling-implementatie
   - start_id: cluster-python-concepten__flask-error-handling
     end_id: stap-7-foutafhandeling-implementatie
-  - start_id: cluster-python-concepten__logging-basis
+  - start_id: cluster-python-concepten__flask-logging
     end_id: stap-8-logging-implementatie
   - start_id: cluster-python-concepten__decorators-basis
     end_id: stap-9-caching-implementatie
