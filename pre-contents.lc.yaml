@@ -86,8 +86,6 @@ nodes:
     title: "Motivatie stap 11: vormelijke controle URL"
   - id: stap-11-vorm-url-implementatie
     title: "Implementatie stap 11: vormelijke controle URL"
-    # - id: stap-11-rest-api-motivatie
-    # - id: stap-11-rest-api-implementatie
   - id: uitbreidingen
     title: "Uitbreidingen URL shortener"
     assignments:
@@ -96,13 +94,13 @@ nodes:
 all_type_edges:
   - start_id: intro
     end_id: stap-1-mapping-tonen-motivatie
-  - start_id: cluster-python-concepten__flask-basics
+  - start_id: cluster-python-concepten__flask-basis
     end_id: stap-1-mapping-tonen-implementatie
-  - start_id: cluster-python-concepten__flask-formulieren
+  - start_id: cluster-python-concepten__flask-formulieren-basis
     end_id: stap-2-mapping-uitbreiden-implementatie
-  - start_id: cluster-python-concepten__flask-combineren-met-jinja
+  - start_id: cluster-python-concepten__flask-jinja
     end_id: stap-2-mapping-uitbreiden-implementatie
-  - start_id: cluster-python-concepten__sqlite-basics
+  - start_id: cluster-python-concepten__sqlite-basis
     end_id: stap-3-persistente-mapping-implementatie
   - start_id: cluster-python-concepten__flask-redirects
     end_id: stap-4-redirects-implementatie
@@ -110,8 +108,8 @@ all_type_edges:
     end_id: stap-5-randomized-aliassen-implementatie
   - start_id: cluster-python-concepten__flask-static
     end_id: stap-6-styling-implementatie
-  - start_id: cluster-python-concepten__flask-error-handling
-    end_id: stap-7-foutafhandeling-implementatie
+      #  - start_id: cluster-python-concepten__flask-redirects
+      #    end_id: stap-7-foutafhandeling-implementatie
   - start_id: cluster-python-concepten__flask-logging
     end_id: stap-8-logging-implementatie
   - start_id: cluster-python-concepten__decorators-basis
