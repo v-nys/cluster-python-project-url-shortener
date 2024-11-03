@@ -1,1 +1,0 @@
-Het is nogal vreemd dat onze applicatie de gebruiker dwingt op de teruggegeven link te klikken (of deze te kopiëren naar de URL-balk). In deze stap zullen we de gebruiker omleiden. Met andere woorden, als hij een geldige alias opzoekt, komt hij meteen op die pagina terecht. Enkel als de alias niet bestaat, krijgt hij een melding (geen 404, maar wel een informatieve pagina).

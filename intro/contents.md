@@ -1,18 +1,17 @@
-Voor dit project maak je een eigen URL shortener.
-Een URL shortener is een dienst die kortere aliassen genereert voor URL's.
-Dit komt bijvoorbeeld van pas wanneer je lange links wil gebruiken in een bericht met een karakterlimiet of wanneer je een URL nodig hebt die makkelijk met de hand in te geven is.
-Een van de populairste voorbeelden van een URL shortener is Bitly.
-Deze biedt onder andere de mogelijkheid om zelf de kortere versie van een link vast te leggen en om QR-codes te genereren.
-Onze URL shortener zal in plaats daarvan pseudowillekeurige links genereren.
-Hoewel we niet de schaal van Bitly voor ogen hebben, zullen we wel een aantal relatief eenvoudige, maar doeltreffende optimalisaties toevoegen.
+In dit project zal je een web scraper schrijven.
+Dit is een programma dat webpagina's bezoekt om er informatie uit te halen.
+Dit gebeurt door de links op een startpagina te verzamelen en deze te volgen, om vervolgens dat proces te herhalen. Dat aspect noemen we "crawlen". Het extraheren van nuttige data is dan het eigenlijke "scrapen".
 
-Om dit te realiseren, zullen we verschillende concepten en libraries nodig hebben:
+Deze techniek wordt enorm veel gebruikt, voor onder andere:
 
-- het web framework Flask, zodat de gebruiker naar een site kan surfen om nieuwe aliassen te registeren, samen met Jinja om Pythoncode te scheiden van HTML en CSS
-- SQLite om de geregistreerde aliassen persistent te bewaren
-- function decorators om goed gebruik te maken van Flask en om memoïsatie toe te passen, een techniek die onze dienst een pak efficiënter kan maken
-- random number generation om pseudowillekeurige URL’s te genereren
-- logging om op te volgen dat alles naar behoren werkt en om eventuele fouten op te sporen
+- het trainen van zoekmachines
+- het verzamelen van training data voor machine learning
+- het opbouwen van site maps
+- het controleren op vervallen URL's
+- ...
 
-We zullen de shortener niet online plaatsen, maar achteraf zou je bijvoorbeeld naar localhost:5000/abcde moeten kunnen surfen en omgeleid worden naar bijvoorbeeld https://www.ap.be/sites/default/files/reglementen/AP/2022-2023/OER_22-23_Dep_def_21.12.2022.pdf.
+Er bestaan gespecialiseerde tools voor zoals Scrapy, maar wij bouwen deze *from scratch*, omdat er heel veel interessante technieken in aan bod komen.
 
+Het eindresultaat beschikt over een command line interface en kan zowel synchroon (één pagina na de andere bezoeken) als asynchroon (meerdere pagina's tegelijk bezoeken) werken. Hieronder zie je een demonstratie van het eindresultaat (per woord wordt het aantal voorkomens getoond en de "maximumdiepte" is het aantal niveaus dat je mag afdwalen van het startpunt):
+
+![demo async scraper](./demo-async-scraper.gif)

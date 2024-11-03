@@ -1,167 +1,144 @@
 nodes:
-  # omvat info uit "omschrijving project" op DigitAP, blok 2
   - id: intro
-    title: "Introductie project URL shortener"
-  # tussenstappen
-  # (oude cursus bevat alleen voorbereidende oefeningen voor meteen basisversie)
-  # (voorbereidende oefeningen 2 gaat over scheiding Python-HTML-CSS en over caching decorator)
-  #
-  # FIXME
-  # misschien beter eerst gewoon "mapping tonen" te doen
-  # daarna formulier verwerken voor "mapping bijhouden"?
-  - id: stap-1-mapping-tonen-motivatie
-    title: "Motivatie stap 1: mapping tonen"
-  - id: stap-1-mapping-tonen-implementatie
-    title: "Implementatie stap 1: mapping tonen"
+    title: "Introductie project asynchrone scraper"
+  # nog niet nodig option mee te geven
+  - id: stap-1-get-request-via-cli-motivatie
+    title: "Motivatie stap 1: GET request via CLI"
+  - id: stap-1-get-request-via-cli-implementatie
+    title: "Implementatie stap 1: GET request via CLI"
     assignments:
       - id: indienopdracht
-        title: "Indienopdracht"
-  - id: stap-2-mapping-uitbreiden-motivatie
-    title: "Motivatie stap 2: mapping uitbreiden"
-  - id: stap-2-mapping-uitbreiden-implementatie
-    title: "Implementatie stap 2: mapping uitbreiden"
+  - id: stap-2-inhoud-tonen-motivatie
+    title: "Motivatie stap 2: inhoud analyseren"
+  - id: stap-2-inhoud-tonen-implementatie
+    title: "Implementatie stap 2: inhoud analyseren"
     assignments:
       - id: indienopdracht
-        title: "Indienopdracht"
-
-  - id: stap-3-persistente-mapping-motivatie
-    title: "Motivatie stap 3: persistente mapping"
-  - id: stap-3-persistente-mapping-implementatie
-    title: "Implementatie stap 3: persistente mapping"
+  - id: stap-3-inhoud-verwerken-motivatie
+    title: "Motivatie stap 3: inhoud verwerken"
+  - id: stap-3-inhoud-verwerken-implementatie
+    title: "Implementatie stap 3: inhoud verwerken"
     assignments:
       - id: indienopdracht
-        title: "Indienopdracht"
-
-  - id: stap-4-redirects-motivatie
-    title: "Motivatie stap 4: redirects"
-  - id: stap-4-redirects-implementatie
-    title: "Implementatie stap 4: redirects"
+  - id: stap-4-links-tonen
+    title: "Motivatie en implementatie stap 4: links tonen"
     assignments:
       - id: indienopdracht
-        title: "Indienopdracht"
-
-  - id: stap-5-randomized-aliassen-motivatie # brute forcen mag niet mogelijk zijn! wat als er privélinks zijn?
-    title: "Motivatie stap 5: randomized aliassen"
-  - id: stap-5-randomized-aliassen-implementatie # leer ze hierbij random.choice gebruiken?
-    title: "Implementatie stap 5: randomized aliassen"
+  - id: stap-5-links-resolven-motivatie
+    title: "Motivatie stap 5: links resolven"
+  - id: stap-5-links-resolven-implementatie
+    title: "Implementatie stap 5: links resolven"
     assignments:
       - id: indienopdracht
-        title: "Indienopdracht"
-  - id: stap-6-styling-motivatie # static assets!
-    title: "Motivatie stap 6: styling"
-  - id: stap-6-styling-implementatie
-    title: "Implementatie stap 6: styling"
+  - id: stap-6-links-bezoeken-motivatie
+    title: "Motivatie stap 6: links bezoeken"
+  - id: stap-6-links-bezoeken-implementatie
+    title: "Implementatie stap 6: links bezoeken"
     assignments:
       - id: indienopdracht
-        title: "Indienopdracht"
-  - id: stap-7-foutafhandeling-motivatie # 404 en exception handling
-    title: "Motivatie stap 7: foutafhandeling"
-  - id: stap-7-foutafhandeling-implementatie
-    title: "Implementatie stap 7: foutafhandeling"
+  - id: stap-7-sync-vlag
+    title: "Motivatie en implementatie stap 7: sync vlag"
     assignments:
       - id: indienopdracht
-        title: "Indienopdracht"
-  - id: stap-8-logging-motivatie
-    title: "Motivatie stap 8: logging"
-  - id: stap-8-logging-implementatie
-    title: "Implementatie stap 8: logging"
+  - id: stap-8-call-met-async-library-motivatie
+    title: "Motivatie stap 8: call met async library"
+  - id: stap-8-call-met-async-library-implementatie
+    title: "Implementatie stap 8: call met async library"
     assignments:
       - id: indienopdracht
-        title: "Indienopdracht"
-  - id: stap-9-caching-motivatie
-    title: "Motivatie stap 9: caching"
-  - id: stap-9-caching-implementatie
-    title: "Implementatie stap 9: caching"
+  - id: stap-9-opeenvolgende-calls-met-async-library
+    title: "Stap 9: opeenvolgende calls met een async library"
     assignments:
       - id: indienopdracht
-        title: "Indienopdracht"
-  - id: stap-10-universele-logging-motivatie
-    title: "Motivatie stap 10: universele logging"
-  - id: stap-10-universele-logging-implementatie
-    title: "Implementatie stap 10: universele-logging"
+  - id: stap-10-gelijktijdige-calls-met-async-library-motivatie
+    title: "Motivatie stap 10: (bijna-)gelijktijdige calls met async library"
+  - id: stap-10-gelijktijdige-calls-met-async-library-implementatie
+    title: "Implementatie stap 10: (bijna-)gelijktijdige calls met async library"
     assignments:
       - id: indienopdracht
-        title: "Indienopdracht"
-  - id: stap-11-vorm-url-motivatie
-    title: "Motivatie stap 11: vormelijke controle URL"
-  - id: stap-11-vorm-url-implementatie
-    title: "Implementatie stap 11: vormelijke controle URL"
+  - id: stap-11-foutafhandeling
+    title: "Stap 11: foutafhandeling"
+    assignments:
+      - id: indienopdracht
+  - id: stap-12-factoriseren
+    title: "Stap 12: factoriseren"
+    assignments:
+      - id: indienopdracht
   - id: uitbreidingen
-    title: "Uitbreidingen URL shortener"
+    # Scrapy; urllib.robotparser; Selenium; NLTK
+    title: "Uitbreidingen"
     assignments:
       - id: indienopdracht
-        title: "Indienopdracht"
 all_type_edges:
-  - start_id: intro
-    end_id: stap-1-mapping-tonen-motivatie
-  - start_id: cluster-python-concepten__flask-basis
-    end_id: stap-1-mapping-tonen-implementatie
-  - start_id: cluster-python-concepten__flask-formulieren-basis
-    end_id: stap-2-mapping-uitbreiden-implementatie
-  - start_id: cluster-python-concepten__flask-jinja
-    end_id: stap-2-mapping-uitbreiden-implementatie
-  - start_id: cluster-python-concepten__sqlite-basis
-    end_id: stap-3-persistente-mapping-implementatie
-  - start_id: cluster-python-concepten__flask-redirects
-    end_id: stap-4-redirects-implementatie
-  - start_id: cluster-python-concepten__karaktervoorstellingen
-    end_id: stap-5-randomized-aliassen-implementatie
-  - start_id: cluster-python-concepten__flask-static
-    end_id: stap-6-styling-implementatie
-      #  - start_id: cluster-python-concepten__flask-redirects
-      #    end_id: stap-7-foutafhandeling-implementatie
-  - start_id: cluster-python-concepten__flask-logging
-    end_id: stap-8-logging-implementatie
-  - start_id: cluster-python-concepten__decorators-basis
-    end_id: stap-9-caching-implementatie
-  - start_id: cluster-python-concepten__decorators-met-argumenten
-    end_id: stap-10-universele-logging-implementatie
+  - start_id: cluster-python-concepten__basis-requests
+    end_id: stap-1-get-request-via-cli-implementatie
+  - start_id: cluster-python-concepten__basis-click
+    end_id: stap-1-get-request-via-cli-implementatie
+  - start_id: cluster-python-concepten__basis-beautifulsoup
+    end_id: stap-2-inhoud-tonen-implementatie
   - start_id: cluster-python-concepten__basis-reguliere-expressies
-    end_id: stap-11-vorm-url-implementatie
+    end_id: stap-2-inhoud-tonen-implementatie
+  - start_id: cluster-python-concepten__pyspellchecker-basis
+    end_id: stap-3-inhoud-verwerken-implementatie
+  - start_id: cluster-python-concepten__counter
+    end_id: stap-3-inhoud-verwerken-implementatie
+  - start_id: cluster-python-concepten__urllibparse
+    end_id: stap-5-links-resolven-implementatie
+  - start_id: cluster-python-concepten__recursieve-datastructuren-diepte-eerst-doorlopen
+    end_id: stap-6-links-bezoeken-implementatie
+  - start_id: cluster-python-concepten__coroutines
+    end_id: stap-8-call-met-async-library-implementatie
+  - start_id: cluster-python-concepten__gather
+    end_id: stap-10-gelijktijdige-calls-met-async-library-implementatie
+  #    mogelijk stappenplan
+  #    stap: eerste pagina via async request opvragen
+  #    stap: in een gewone for loop wachten op elke link
+  #    stap: gather toepassen om meteen links samen te verwerken als reeks taken (kunnen dan links binnen één pagina tegelijkertijd opvragen)
+  #    onderdelen: https://docs.python.org/3/library/asyncio-task.html#creating-tasks voor create_task (als we ze in een algemene set plaatsen)
+  #    dat vereist dan weer iets rond callbacks en verklaring `discard`
+  #    stap: per link (die nog niet bezocht is) taak aanmaken?
+  #    onderdelen: iets rond de werking GC
+  # uitbreidingen:
 any_type_edges:
-  - start_id: stap-1-mapping-tonen-motivatie
-    end_id: stap-1-mapping-tonen-implementatie
-  - start_id: stap-1-mapping-tonen-implementatie
-    end_id: stap-2-mapping-uitbreiden-motivatie
-  - start_id: stap-2-mapping-uitbreiden-motivatie
-    end_id: stap-2-mapping-uitbreiden-implementatie
-  - start_id: stap-2-mapping-uitbreiden-implementatie
-    end_id: stap-3-persistente-mapping-motivatie
-  - start_id: stap-3-persistente-mapping-motivatie
-    end_id: stap-3-persistente-mapping-implementatie
-  - start_id: stap-3-persistente-mapping-implementatie
-    end_id: stap-4-redirects-motivatie
-  - start_id: stap-4-redirects-motivatie
-    end_id: stap-4-redirects-implementatie
-  - start_id: stap-4-redirects-implementatie
-    end_id: stap-5-randomized-aliassen-motivatie
-  - start_id: stap-5-randomized-aliassen-motivatie
-    end_id: stap-5-randomized-aliassen-implementatie
-  - start_id: stap-5-randomized-aliassen-implementatie
-    end_id: stap-6-styling-motivatie
-  - start_id: stap-6-styling-motivatie
-    end_id: stap-6-styling-implementatie
-  - start_id: stap-6-styling-implementatie
-    end_id: stap-7-foutafhandeling-motivatie
-  - start_id: stap-7-foutafhandeling-motivatie
-    end_id: stap-7-foutafhandeling-implementatie
-  - start_id: stap-7-foutafhandeling-implementatie
-    end_id: stap-8-logging-motivatie
-  - start_id: stap-8-logging-motivatie
-    end_id: stap-8-logging-implementatie
-  - start_id: stap-8-logging-implementatie
-    end_id: stap-9-caching-motivatie
-  - start_id: stap-9-caching-motivatie
-    end_id: stap-9-caching-implementatie
-  - start_id: stap-9-caching-implementatie
-    end_id: stap-10-universele-logging-motivatie
-  - start_id: stap-10-universele-logging-motivatie
-    end_id: stap-10-universele-logging-implementatie
-  - start_id: stap-10-universele-logging-implementatie
-    end_id: stap-11-vorm-url-motivatie
-  - start_id: stap-11-vorm-url-motivatie
-    end_id: stap-11-vorm-url-implementatie
-  - start_id: stap-11-vorm-url-implementatie
+  - start_id: intro
+    end_id: stap-1-get-request-via-cli-motivatie
+  - start_id: stap-1-get-request-via-cli-motivatie
+    end_id: stap-1-get-request-via-cli-implementatie
+  - start_id: stap-1-get-request-via-cli-implementatie
+    end_id: stap-2-inhoud-tonen-motivatie
+  - start_id: stap-2-inhoud-tonen-motivatie
+    end_id: stap-2-inhoud-tonen-implementatie
+  - start_id: stap-2-inhoud-tonen-implementatie
+    end_id: stap-3-inhoud-verwerken-motivatie
+  - start_id: stap-3-inhoud-verwerken-motivatie
+    end_id: stap-3-inhoud-verwerken-implementatie
+  - start_id: stap-3-inhoud-verwerken-implementatie
+    end_id: stap-4-links-tonen
+  - start_id: stap-4-links-tonen
+    end_id: stap-5-links-resolven-motivatie
+  - start_id: stap-5-links-resolven-motivatie
+    end_id: stap-5-links-resolven-implementatie
+  - start_id: stap-5-links-resolven-implementatie
+    end_id: stap-6-links-bezoeken-motivatie
+  - start_id: stap-6-links-bezoeken-motivatie
+    end_id: stap-6-links-bezoeken-implementatie
+  - start_id: stap-6-links-bezoeken-implementatie
+    end_id: stap-7-sync-vlag
+  - start_id: stap-7-sync-vlag
+    end_id: stap-8-call-met-async-library-motivatie
+  - start_id: stap-8-call-met-async-library-motivatie
+    end_id: stap-8-call-met-async-library-implementatie
+  - start_id: stap-8-call-met-async-library-implementatie
+    end_id: stap-9-opeenvolgende-calls-met-async-library
+  - start_id: stap-9-opeenvolgende-calls-met-async-library
+    end_id: stap-10-gelijktijdige-calls-met-async-library-motivatie
+  - start_id: stap-10-gelijktijdige-calls-met-async-library-motivatie
+    end_id: stap-10-gelijktijdige-calls-met-async-library-implementatie
+  - start_id: stap-10-gelijktijdige-calls-met-async-library-implementatie
+    end_id: stap-11-foutafhandeling
+  - start_id: stap-11-foutafhandeling
+    end_id: stap-12-factoriseren
+  - start_id: stap-12-factoriseren
     end_id: uitbreidingen
 roots:
   - intro

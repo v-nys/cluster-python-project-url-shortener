@@ -1,0 +1,1 @@
+Reproduceer nu het gedrag van de synchrone versie, maar met de asynchrone library. Je hoeft nog niet efficiënter te zijn dan met de synchrone versie. Zorg gewoon dat de recursieve calls wachten op een coroutine in plaats van een synchrone functie te gebruiken.
