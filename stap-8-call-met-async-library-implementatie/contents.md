@@ -1,1 +1,0 @@
-Laat de asynchrone modus van je programma gewoon een startpagina opvragen en daarvan het aantal voorkomens van elk woord tellen. Het command line argument voor maximumdiepte negeer je dus, want er worden geen links gevolgd.

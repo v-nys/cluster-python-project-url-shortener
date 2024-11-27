@@ -1,1 +1,0 @@
-Pas nu je programma aan, zodat niet de HTML getoond wordt, maar wel een lijst van alle woorden in de tekstvoorstelling van de pagina. Je mag hier voorlopig onder verstaan: "alles wat tussen woordgrenzen voorkomt".

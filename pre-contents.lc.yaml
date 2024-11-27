@@ -1,151 +1,96 @@
+# yaml-language-server: $schema=./cluster_schema.json
 nodes:
   - id: intro
-    title: "Introductie project asynchrone scraper"
-  # nog niet nodig option mee te geven
-  - id: stap-1-get-request-via-cli-motivatie
-    title: "Motivatie stap 1: GET request via CLI"
-  - id: stap-1-get-request-via-cli-implementatie
-    title: "Implementatie stap 1: GET request via CLI"
-    assignments:
-      - id: indienopdracht
-  - id: stap-2-inhoud-tonen-motivatie
-    title: "Motivatie stap 2: inhoud analyseren"
-  - id: stap-2-inhoud-tonen-implementatie
-    title: "Implementatie stap 2: inhoud analyseren"
-    assignments:
-      - id: indienopdracht
-  - id: stap-3-inhoud-verwerken-motivatie
-    title: "Motivatie stap 3: inhoud verwerken"
-  - id: stap-3-inhoud-verwerken-implementatie
-    title: "Implementatie stap 3: inhoud verwerken"
-    assignments:
-      - id: indienopdracht
-  - id: stap-4-links-tonen
-    title: "Motivatie en implementatie stap 4: links tonen"
-    assignments:
-      - id: indienopdracht
-  - id: stap-5-links-resolven-motivatie
-    title: "Motivatie stap 5: links resolven"
-  - id: stap-5-links-resolven-implementatie
-    title: "Implementatie stap 5: links resolven"
-    assignments:
-      - id: indienopdracht
-  - id: stap-6-links-bezoeken-motivatie
-    title: "Motivatie stap 6: links bezoeken"
-  - id: stap-6-links-bezoeken-implementatie
-    title: "Implementatie stap 6: links bezoeken"
-    assignments:
-      - id: indienopdracht
-  - id: stap-7-sync-vlag
-    title: "Motivatie en implementatie stap 7: sync vlag"
-    assignments:
-      - id: indienopdracht
-  - id: stap-8-call-met-async-library-motivatie
-    title: "Motivatie stap 8: call met async library"
-  - id: stap-8-call-met-async-library-implementatie
-    title: "Implementatie stap 8: call met async library"
-    assignments:
-      - id: indienopdracht
-  - id: stap-9-opeenvolgende-calls-met-async-library
-    title: "Stap 9: opeenvolgende calls met een async library"
-    assignments:
-      - id: indienopdracht
-  - id: stap-10-gelijktijdige-calls-met-async-library-motivatie
-    title: "Motivatie stap 10: (bijna-)gelijktijdige calls met async library"
-  - id: stap-10-gelijktijdige-calls-met-async-library-implementatie
-    title: "Implementatie stap 10: (bijna-)gelijktijdige calls met async library"
-    assignments:
-      - id: indienopdracht
-  - id: stap-11-foutafhandeling
-    title: "Stap 11: foutafhandeling"
-    assignments:
-      - id: indienopdracht
-  - id: stap-12-factoriseren
-    title: "Stap 12: factoriseren"
-    assignments:
-      - id: indienopdracht
-  - id: uitbreidingen
-    # Scrapy; urllib.robotparser; Selenium; NLTK
-    title: "Uitbreidingen"
-    assignments:
-      - id: indienopdracht
+    title: "Introductie project kalender met FastAPI"
+  - id: stap-1-hardgecodeerde-afspraken-tonen-motivatie
+    title: "Motivatie stap 1: hardgecodeerde afspraken tonen"
+  - id: stap-1-hardgecodeerde-afspraken-tonen-implementatie
+    title: "Implementatie stap 1: hardgecodeerde afspraken tonen"
+  - id: stap-2-afspraken-toevoegen-raw-request-motivatie
+    title: "Motivatie stap 2: raw requests uitvoeren"
+  - id: stap-2-afspraken-toevoegen-raw-request-implementatie
+    title: "Implementatie stap 2: raw requests uitvoeren"
+  - id: stap-3-afspraken-verwijderen-raw-request-motivatie
+    title: "Motivatie stap 3: afspraken verwijderen via raw request"
+  - id: stap-3-afspraken-verwijderen-raw-request-implementatie
+    title: "Implementatie stap 3: afspraken verwijderen via raw request"
+  - id: stap-4-model-gebruiken-motivatie
+    title: "Motivatie stap 4: model gebruiken"
+  - id: stap-4-model-gebruiken-implementatie
+    title: "Implementatie stap 4: model gebruiken"
+  - id: stap-5-data-persisten-in-sqlite-motivatie
+    title: "Motivatie stap 5: data persisten in SQLite"
+  - id: stap-5-data-persisten-in-sqlite-implementatie # TODO zeg voorlopig: aparte connectie per ding! TODO gitignoren van DB!
+    title: "Implementatie stap 5: data persisten in SQLite"
+  - id: stap-6-data-persisten-met-sqlmodel-motivatie
+    title: "Motivatie stap 6: data persisten met SQLModel"
+  - id: stap-6-data-persisten-met-sqlmodel-implementatie # TODO merk op: niet-bestaande afspraak wissen: HTTPException
+    title: "Implementatie stap 6: data persisten met SQLModel"
+  - id: stap-7-sessie-injecteren-motivatie
+    title: "Motivatie stap 7: databasesessie injecteren"
+  - id: stap-7-sessie-injecteren-implementatie
+    title: "Implementatie stap 7: databasesessie injecteren"
+  - id: stap-8-modelspecialisatie-voor-crud-motivatie
+    title: "Motivatie stap 8: modelspecialisatie voor CRUD"
+  - id: stap-8-modelspecialisatie-voor-crud-implementatie
+    title: "Implementatie stap 8: modelspecialisatie voor CRUD"
 all_type_edges:
-  - start_id: cluster-python-concepten__basis-requests
-    end_id: stap-1-get-request-via-cli-implementatie
-  - start_id: cluster-python-concepten__basis-click
-    end_id: stap-1-get-request-via-cli-implementatie
-  - start_id: cluster-python-concepten__basis-beautifulsoup
-    end_id: stap-2-inhoud-tonen-implementatie
-  - start_id: cluster-python-concepten__basis-reguliere-expressies
-    end_id: stap-2-inhoud-tonen-implementatie
-  - start_id: cluster-python-concepten__pyspellchecker-basis
-    end_id: stap-3-inhoud-verwerken-implementatie
-  - start_id: cluster-python-concepten__counter
-    end_id: stap-3-inhoud-verwerken-implementatie
-  - start_id: cluster-python-concepten__urllibparse
-    end_id: stap-5-links-resolven-implementatie
-  - start_id: cluster-python-concepten__recursieve-datastructuren-diepte-eerst-doorlopen
-    end_id: stap-6-links-bezoeken-implementatie
-  - start_id: cluster-python-concepten__coroutines
-    end_id: stap-8-call-met-async-library-implementatie
-  - start_id: cluster-python-concepten__gather
-    end_id: stap-10-gelijktijdige-calls-met-async-library-implementatie
-  #    mogelijk stappenplan
-  #    stap: eerste pagina via async request opvragen
-  #    stap: in een gewone for loop wachten op elke link
-  #    stap: gather toepassen om meteen links samen te verwerken als reeks taken (kunnen dan links binnen één pagina tegelijkertijd opvragen)
-  #    onderdelen: https://docs.python.org/3/library/asyncio-task.html#creating-tasks voor create_task (als we ze in een algemene set plaatsen)
-  #    dat vereist dan weer iets rond callbacks en verklaring `discard`
-  #    stap: per link (die nog niet bezocht is) taak aanmaken?
-  #    onderdelen: iets rond de werking GC
-  # uitbreidingen:
+  - start_id: cluster-python-concepten__fastapi-hello-world
+    end_id: stap-1-hardgecodeerde-afspraken-tonen-implementatie
+  - start_id: cluster-python-concepten__fastapi-request-body
+    end_id: stap-2-afspraken-toevoegen-raw-request-implementatie
+  - start_id: cluster-python-concepten__fastapi-automatische-docs
+    end_id: stap-3-afspraken-verwijderen-raw-request-implementatie
+  - start_id: cluster-python-concepten__pydantic
+    end_id: stap-4-model-gebruiken-implementatie
+  - start_id: cluster-python-concepten__sqlite-basis
+    end_id: stap-5-data-persisten-in-sqlite-implementatie
+  - start_id: cluster-python-concepten__sqlmodel-basis
+    end_id: stap-6-data-persisten-met-sqlmodel-implementatie
+  - start_id: cluster-python-concepten__dependency-injection-in-fastapi
+    end_id: stap-7-sessie-injecteren-implementatie
 any_type_edges:
   - start_id: intro
-    end_id: stap-1-get-request-via-cli-motivatie
-  - start_id: stap-1-get-request-via-cli-motivatie
-    end_id: stap-1-get-request-via-cli-implementatie
-  - start_id: stap-1-get-request-via-cli-implementatie
-    end_id: stap-2-inhoud-tonen-motivatie
-  - start_id: stap-2-inhoud-tonen-motivatie
-    end_id: stap-2-inhoud-tonen-implementatie
-  - start_id: stap-2-inhoud-tonen-implementatie
-    end_id: stap-3-inhoud-verwerken-motivatie
-  - start_id: stap-3-inhoud-verwerken-motivatie
-    end_id: stap-3-inhoud-verwerken-implementatie
-  - start_id: stap-3-inhoud-verwerken-implementatie
-    end_id: stap-4-links-tonen
-  - start_id: stap-4-links-tonen
-    end_id: stap-5-links-resolven-motivatie
-  - start_id: stap-5-links-resolven-motivatie
-    end_id: stap-5-links-resolven-implementatie
-  - start_id: stap-5-links-resolven-implementatie
-    end_id: stap-6-links-bezoeken-motivatie
-  - start_id: stap-6-links-bezoeken-motivatie
-    end_id: stap-6-links-bezoeken-implementatie
-  - start_id: stap-6-links-bezoeken-implementatie
-    end_id: stap-7-sync-vlag
-  - start_id: stap-7-sync-vlag
-    end_id: stap-8-call-met-async-library-motivatie
-  - start_id: stap-8-call-met-async-library-motivatie
-    end_id: stap-8-call-met-async-library-implementatie
-  - start_id: stap-8-call-met-async-library-implementatie
-    end_id: stap-9-opeenvolgende-calls-met-async-library
-  - start_id: stap-9-opeenvolgende-calls-met-async-library
-    end_id: stap-10-gelijktijdige-calls-met-async-library-motivatie
-  - start_id: stap-10-gelijktijdige-calls-met-async-library-motivatie
-    end_id: stap-10-gelijktijdige-calls-met-async-library-implementatie
-  - start_id: stap-10-gelijktijdige-calls-met-async-library-implementatie
-    end_id: stap-11-foutafhandeling
-  - start_id: stap-11-foutafhandeling
-    end_id: stap-12-factoriseren
-  - start_id: stap-12-factoriseren
-    end_id: uitbreidingen
+    end_id: stap-1-hardgecodeerde-afspraken-tonen-motivatie
+  - start_id: stap-1-hardgecodeerde-afspraken-tonen-motivatie
+    end_id: stap-1-hardgecodeerde-afspraken-tonen-implementatie
+  - start_id: stap-1-hardgecodeerde-afspraken-tonen-implementatie
+    end_id: stap-2-afspraken-toevoegen-raw-request-motivatie
+  - start_id: stap-2-afspraken-toevoegen-raw-request-motivatie
+    end_id: stap-2-afspraken-toevoegen-raw-request-implementatie
+  - start_id: stap-2-afspraken-toevoegen-raw-request-implementatie
+    end_id: stap-3-afspraken-verwijderen-raw-request-motivatie
+  - start_id: stap-3-afspraken-verwijderen-raw-request-motivatie
+    end_id: stap-3-afspraken-verwijderen-raw-request-implementatie
+  - start_id: stap-3-afspraken-verwijderen-raw-request-implementatie
+    end_id: stap-4-model-gebruiken-motivatie
+  - start_id: stap-4-model-gebruiken-motivatie
+    end_id: stap-4-model-gebruiken-implementatie
+  - start_id: stap-4-model-gebruiken-implementatie
+    end_id: stap-5-data-persisten-in-sqlite-motivatie
+  - start_id: stap-5-data-persisten-in-sqlite-motivatie
+    end_id: stap-5-data-persisten-in-sqlite-implementatie
+  - start_id: stap-5-data-persisten-in-sqlite-implementatie
+    end_id: stap-6-data-persisten-met-sqlmodel-motivatie
+  - start_id: stap-6-data-persisten-met-sqlmodel-motivatie
+    end_id: stap-6-data-persisten-met-sqlmodel-implementatie
+  - start_id: stap-6-data-persisten-met-sqlmodel-implementatie
+    end_id: stap-7-sessie-injecteren-motivatie
+  - start_id: stap-7-sessie-injecteren-motivatie
+    end_id: stap-7-sessie-injecteren-implementatie
+  - start_id: stap-7-sessie-injecteren-implementatie
+    end_id: stap-8-modelspecialisatie-voor-crud-motivatie
+  - start_id: stap-8-modelspecialisatie-voor-crud-motivatie
+    end_id: stap-8-modelspecialisatie-voor-crud-implementatie
+  # authenticatie?
+  # pytest in combinatie met DI?
 roots:
   - intro
 node_plugins:
-  - path: "$APPLICATION_SOURCE_DIR/rust-workspace/target/debug/liblblp_assignments_plugin.so"
-    require_solutions: False
+  - path: "$LBLP_SOURCE_DIR/rust-workspace/target/debug/liblblp_assignments_plugin.so"
+    require_model_solutions: False
 pre_cluster_plugins:
-  - path: "$APPLICATION_SOURCE_DIR/rust-workspace/target/debug/liblblp_markdown_rendering_plugin.so"
+  - path: "$LBLP_SOURCE_DIR/rust-workspace/target/debug/liblblp_markdown_rendering_plugin.so"
+  - path: "$LBLP_SOURCE_DIR/rust-workspace/target/debug/liblblp_yaml_schema_generation_plugin.so"
 pre_zip_plugins:
-  - path: "$APPLICATION_SOURCE_DIR/rust-workspace/target/debug/liblblp_moodle_format_plugin.so"
+  - path: "$LBLP_SOURCE_DIR/rust-workspace/target/debug/liblblp_moodle_format_plugin.so"
