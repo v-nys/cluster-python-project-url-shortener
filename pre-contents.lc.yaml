@@ -10,9 +10,9 @@ nodes:
     title: "Motivatie stap 2: raw requests uitvoeren"
   - id: stap-2-afspraken-toevoegen-raw-request-implementatie
     title: "Implementatie stap 2: raw requests uitvoeren"
-  - id: stap-3-afspraken-verwijderen-raw-request-motivatie
+  - id: stap-3-afspraken-verwijderen-motivatie
     title: "Motivatie stap 3: afspraken verwijderen via raw request"
-  - id: stap-3-afspraken-verwijderen-raw-request-implementatie
+  - id: stap-3-afspraken-verwijderen-implementatie
     title: "Implementatie stap 3: afspraken verwijderen via raw request"
   - id: stap-4-model-gebruiken-motivatie
     title: "Motivatie stap 4: model gebruiken"
@@ -44,7 +44,7 @@ all_type_edges:
   - start_id: cluster-python-concepten__fastapi-request-body
     end_id: stap-2-afspraken-toevoegen-raw-request-implementatie
   - start_id: cluster-python-concepten__fastapi-automatische-docs
-    end_id: stap-3-afspraken-verwijderen-raw-request-implementatie
+    end_id: stap-3-afspraken-verwijderen-implementatie
   - start_id: cluster-python-concepten__pydantic
     end_id: stap-4-model-gebruiken-implementatie
   - start_id: cluster-python-concepten__sqlite-basis
@@ -65,10 +65,10 @@ any_type_edges:
   - start_id: stap-2-afspraken-toevoegen-raw-request-motivatie
     end_id: stap-2-afspraken-toevoegen-raw-request-implementatie
   - start_id: stap-2-afspraken-toevoegen-raw-request-implementatie
-    end_id: stap-3-afspraken-verwijderen-raw-request-motivatie
-  - start_id: stap-3-afspraken-verwijderen-raw-request-motivatie
-    end_id: stap-3-afspraken-verwijderen-raw-request-implementatie
-  - start_id: stap-3-afspraken-verwijderen-raw-request-implementatie
+    end_id: stap-3-afspraken-verwijderen-motivatie
+  - start_id: stap-3-afspraken-verwijderen-motivatie
+    end_id: stap-3-afspraken-verwijderen-implementatie
+  - start_id: stap-3-afspraken-verwijderen-implementatie
     end_id: stap-4-model-gebruiken-motivatie
   - start_id: stap-4-model-gebruiken-motivatie
     end_id: stap-4-model-gebruiken-implementatie
