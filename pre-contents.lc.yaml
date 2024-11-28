@@ -6,38 +6,65 @@ nodes:
     title: "Motivatie stap 1: hardgecodeerde afspraken tonen"
   - id: stap-1-hardgecodeerde-afspraken-tonen-implementatie
     title: "Implementatie stap 1: hardgecodeerde afspraken tonen"
+    assignments:
+      - id: indienopdracht
+
   - id: stap-2-afspraken-toevoegen-raw-request-motivatie
     title: "Motivatie stap 2: raw requests uitvoeren"
   - id: stap-2-afspraken-toevoegen-raw-request-implementatie
     title: "Implementatie stap 2: raw requests uitvoeren"
+    assignments:
+      - id: indienopdracht
+
   - id: stap-3-afspraken-verwijderen-motivatie
     title: "Motivatie stap 3: afspraken verwijderen via raw request"
   - id: stap-3-afspraken-verwijderen-implementatie
     title: "Implementatie stap 3: afspraken verwijderen via raw request"
+    assignments:
+      - id: indienopdracht
+
   - id: stap-4-model-gebruiken-motivatie
     title: "Motivatie stap 4: model gebruiken"
   - id: stap-4-model-gebruiken-implementatie
     title: "Implementatie stap 4: model gebruiken"
+    assignments:
+      - id: indienopdracht
+
   - id: stap-5-data-persisten-in-sqlite-motivatie
     title: "Motivatie stap 5: data persisten in SQLite"
   - id: stap-5-data-persisten-in-sqlite-implementatie # TODO zeg voorlopig: aparte connectie per ding! TODO gitignoren van DB!
     title: "Implementatie stap 5: data persisten in SQLite"
+    assignments:
+      - id: indienopdracht
+
   - id: stap-6-data-persisten-met-sqlmodel-motivatie
     title: "Motivatie stap 6: data persisten met SQLModel"
   - id: stap-6-data-persisten-met-sqlmodel-implementatie # TODO merk op: niet-bestaande afspraak wissen: HTTPException
     title: "Implementatie stap 6: data persisten met SQLModel"
+    assignments:
+      - id: indienopdracht
+
   - id: stap-7-sessie-injecteren-motivatie
     title: "Motivatie stap 7: databasesessie injecteren"
   - id: stap-7-sessie-injecteren-implementatie
     title: "Implementatie stap 7: databasesessie injecteren"
+    assignments:
+      - id: indienopdracht
+
   - id: stap-8-modelspecialisatie-voor-crud-motivatie
     title: "Motivatie stap 8: modelspecialisatie voor CRUD"
   - id: stap-8-modelspecialisatie-voor-crud-implementatie
     title: "Implementatie stap 8: modelspecialisatie voor CRUD"
+    assignments:
+      - id: indienopdracht
+
   - id: stap-9-beveiliging-api-motivatie
     title: "Motivatie stap 9: beveiliging van de API"
   - id: stap-9-beveiliging-api-implementatie
     title: "Motivatie stap 9: beveiliging van de API"
+    assignments:
+      - id: indienopdracht
+
 all_type_edges:
   - start_id: cluster-python-concepten__fastapi-hello-world
     end_id: stap-1-hardgecodeerde-afspraken-tonen-implementatie
