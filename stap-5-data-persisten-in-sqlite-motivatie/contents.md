@@ -1,0 +1,1 @@
+Tot hiertoe hebben we alle data opgeslagen in een lijst met afspraken. Dat staat toe de functionaliteit te demonstreren, maar zorgt dat we onze data verliezen wanneer we de applicatie herstarten. We kunnen dit oplossen door afspraken te serialiseren. Dat kan naar verschillende zaken, maar wij zullen hier serialiseren naar een database. Dit vereist dat we met SQLite werken.
