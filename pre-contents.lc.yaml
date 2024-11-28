@@ -102,3 +102,4 @@ pre_cluster_plugins:
   - path: "$LBLP_SOURCE_DIR/rust-workspace/target/debug/liblblp_yaml_schema_generation_plugin.so"
 pre_zip_plugins:
   - path: "$LBLP_SOURCE_DIR/rust-workspace/target/debug/liblblp_moodle_format_plugin.so"
+
