@@ -34,6 +34,10 @@ nodes:
     title: "Motivatie stap 8: modelspecialisatie voor CRUD"
   - id: stap-8-modelspecialisatie-voor-crud-implementatie
     title: "Implementatie stap 8: modelspecialisatie voor CRUD"
+  - id: stap-9-beveiliging-api-motivatie
+    title: "Motivatie stap 9: beveiliging van de API"
+  - id: stap-9-beveiliging-api-implementatie
+    title: "Motivatie stap 9: beveiliging van de API"
 all_type_edges:
   - start_id: cluster-python-concepten__fastapi-hello-world
     end_id: stap-1-hardgecodeerde-afspraken-tonen-implementatie
@@ -49,6 +53,8 @@ all_type_edges:
     end_id: stap-6-data-persisten-met-sqlmodel-implementatie
   - start_id: cluster-python-concepten__dependency-injection-in-fastapi
     end_id: stap-7-sessie-injecteren-implementatie
+  - start_id: cluster-python-concepten__security-in-fastapi
+    end_id: stap-9-beveiliging-api-implementatie
 any_type_edges:
   - start_id: intro
     end_id: stap-1-hardgecodeerde-afspraken-tonen-motivatie
@@ -82,8 +88,10 @@ any_type_edges:
     end_id: stap-8-modelspecialisatie-voor-crud-motivatie
   - start_id: stap-8-modelspecialisatie-voor-crud-motivatie
     end_id: stap-8-modelspecialisatie-voor-crud-implementatie
-  # authenticatie?
-  # pytest in combinatie met DI?
+  - start_id: stap-8-modelspecialisatie-voor-crud-implementatie
+    end_id: stap-9-beveiliging-api-motivatie
+  - start_id: stap-9-beveiliging-api-motivatie
+    end_id: stap-9-beveiliging-api-implementatie
 roots:
   - intro
 node_plugins:
